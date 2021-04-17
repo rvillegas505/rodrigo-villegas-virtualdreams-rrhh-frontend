@@ -1,0 +1,39 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contenedorform {
+    margin-top: 3rem;
+}
+
+.navbar {
+    background-color: #0062FF;
+}
+
+.navbar-nav>li {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.sepformcard {
+    margin-top: 1.5rem;
+}
+
+.warnings {
+    color: #FF0000;
+    text-align: center;
+}
+
+#vmodal {
+    display: none;
+}
+
+.botonEnviar {
+    background-color: #212121;
+    color: white;
+    width: 8rem;
+}
+
+.botonEnviar:hover {
+    background-color: grey;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dreams</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">Virtual Dreams</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Búsquedas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Form -->
+
+    <div class="container-sm align-content-center justify-content-center contenedorform">
+
+        <!--modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="vmodal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Enviado!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>El mensaje se envió correctamente.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin Modal-->
+
+        <div class="row justify-content-center align-content-center">
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="col">
+                            <h4 class="card-title nombrecard">Contáctenos</h4>
+                        </div>
+                        <div class="col">
+                            <p class="card-title parrafocontacto">Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros servicios.</p>
+                            <p class="card-title parrafocontacto">Haremos todo lo posible por darle respuesta a la brevedad</p>
+                        </div>
+
+                        <form action="" method="POST" id="form">
+                            <div class="col text-center sepformcard">
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="col text-center ">
+                                <input type="text" id="name" name="name" minlength="3" maxlength="20" size="15">
+                            </div>
+                            <p class="warnings" id="warningNombre"></p>
+                            <div class="col text-center sepformcard">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col text-center ">
+                                <input type="text" id="email" name="email" maxlength="35" size="15">
+                            </div>
+                            <p class="warnings" id="warningEmail"></p>
+                            <div class="col text-center sepformcard">
+                                <label for="asunto">Asunto</label>
+                            </div>
+                            <div class="col text-center ">
+                                <input type="text" id="asunto" name="asunto" maxlength="30" size="15">
+                            </div>
+                            <p class="warnings" id="warningAsunto"></p>
+                            <div class="col text-center sepformcard">
+                                <label for="mensaje">Mensaje</label>
+                            </div>
+                            <div class="col text-center ">
+                                <textarea class="form-control" type="text" id="mensaje" name="mensaje" maxlength="500" size="10" rows="3"></textarea>
+                            </div>
+                            <p class="warnings" id="warningMensaje"></p>
+
+                            <div class="col text-center sepformcard">
+                                <button name="boton" type="submit" class="btn botonEnviar" data-toggle="modal">Enviar</button>
+                            </div>
+
+                            <p class="warnings" id="warnings"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="js/validar.js"></script>
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
